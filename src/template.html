@@ -5,10 +5,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <aside>
+        <h3>Todos</h3>
+        <div id="show-add-task-btn">
+            <img class="filter-orange" src="../icons/plus_circle.svg" alt="">
+            <p>Add task</p>
+        </div>
+        <div>
+            <img src="../icons/inbox.svg" alt="">
+            <p>Inbox</p>
+        </div>
+        <!-- <div>
+            <img src="../icons/calendar_today.svg" alt="">
+            <p>Today</p>
+        </div> -->
+        <div class="my-project">
+            <p>My project</p>
+            <img id="add-project" src="../icons/plus.svg" alt="">
+        </div>
+        <dialog id="add-project-dialog">
+            <form id="add-project-form" method="dialog">
+                <h1>Add project</h1>
+                <div>
+                    <label for="project-name">Name:</label>
+                    <input id="project-name" name="project-name" type="text">
+                </div>
+                <div>
+                    <button type="submit" id="cancel">Cancel</button>
+                    <button type="submit" id="add-project-btn">Add</button>
+                </div>
+            </form>
+        </dialog>
+        <dialog id="add-task-dialog">
+            <h1>Add Task</h1>
+            <form id="add-task-form" method="dialog">
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div>
+                    <label for="description">Description:</label>
+                    <input type="text" id="description" name="description">
+                </div>
+                <div>
+                    <label for="priority">Priority:</label>
+                    <select name="priority" id="priority">
+                        <option value="1">
+                            Priority 1
+                        </option>
+                        <option value="2">
+                            Priority 2
+                        </option>
+                        <option value="3">
+                            Priority 3
+                        </option>
+                        <option value="4">
+                            Priority 4
+                        </option>
+                    </select>
 
+                </div>
+                <div>
+                    <label for="duedate">Due date:</label>
+                    <input type="date" id="duedate" name="duedate">
+                </div>
+                <div class="btn-controller">
+                    <button type="submit" id="add-task-cancel">Cancel</button>
+                    <button type="submit" id="add-task-btn">Add</button>
+                    <button type="submit" id="update-task-btn">Update</button>
+                </div>
+            </form>
+        </dialog>
+        <div class="my-projects-list">
+
+        </div>
+    </aside>
+    <main>
+        <div id="main-content">
+            <!-- <h1>Inbox</h1>
+            <div class="todo-item">
+                <input type="checkbox" name="checklist" id="checklist">
+                <div>
+                    <h4>title</h4>
+                    <p>des</p>
+
+                    <div class="calendar">
+                        <img src="../icons/date.svg" alt="">
+                        <p>20 Sep</p>
+                    </div>
+                </div>
+
+
+                <button>
+                    <img class="filter-red" src="../icons/delete.svg" alt="">
+                    Delete
+                </button>
+
+            </div>
+            <hr class="solid"> -->
+
+        </div>
+
+    </main>
 </body>
 
 </html>
